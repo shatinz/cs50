@@ -29,4 +29,15 @@
         according to :
          wi = wi + a(actual value - estimate) * xi
 
+         
+        logistic-regression(soft threshold):
+        idea: make an algorythem that works for only estimating margins and out of line datas.
+    
+        
+    support-vector macines:
+        maximum margin separator:
+        boundary that maximizes the distance between an ofthe data points.
+
+    regression:
+        supervised learning task of learning a function mapping an input point to a continuous value.
     '''
