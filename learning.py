@@ -67,5 +67,43 @@
           splitting data into k sets, and experimenting k times, using each set as a test once,
           and using remaining data as training set. 
     reinforcement learning:
-      given a set of rewards or punishments, learn what action to take in in  future
+      given a set of rewards or punishments, learn what action to take in in  future.
+      state-action-reward
+        marcov decision process:
+        model for decision-making, representing states, actions and their rewards
+        .set of states s
+        .set of actions(s)
+      transitiont model p(s'|s,a)
+        .reward function r(s,a,s')
+      q-learning
+         method for learning a function q(s,a) estimate of the value of performing action a in state s
+         .start with q(s,a) = 0 for all s,a
+         .when we taken an action and recieve a reward
+         .estimate the vlue of q(s,a) based on current reward and expected future rewards
+         .update q(s,a) to take into account old estimate as well as our new estimate
+             q(s,a) + q(s,a) a(new value estimate - old value estimate)
+         .alfa value : how much value we get to new estimate compare to old estimate
+         .alfa value 1 : we really value our new estimate
+      exploit: older information that leads to reward
+      explore: what might lead to a better reward in future. finding new 
+      e-greedy:
+        set e equal to how often we want to move randomly
+        with probability 1-e , choose estimated best move.
+        with probability 3, choose a random move.
+      function approximation :
+        approximating q(s,a) , often by a function combinig various features, rather than storing one value for every state-action pair
+  unsupervised learning
+  givven input without any additional feedback, learn pattens.
+    clustering:
+    organizing a set of objects into groups in such a way that similar objects tend to be in the same group
+      k-means clustering
+        algorythm for clustering sata based on repeadly assigning points to cluster and updating those clusters centers
+        
+
+ 
+
+
+      
+
+
     '''
